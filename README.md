@@ -29,4 +29,5 @@ Content such as speaker lineups, schedules, and social media links will be added
 
 ---
 
-© 2026 Future Civilizations Society
+© 2026 Future Civilizations Society 
+© Abdallah Gazal
