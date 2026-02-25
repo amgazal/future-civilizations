@@ -1,292 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Future Civilizations Conference | Cornell 2026</title>
-
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Future Civilizations Society | Cornell</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
+<body class="site">
 
-  <div class="topnav">
-    <div class="nav-inner">
-      <a class="brand" href="#top">Future Civilizations Society</a>
-
-      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-
-      <div class="navlinks" id="navlinks">
-        <a href="#conference">Conference</a>
-        <a href="#team">Team</a>
-        <a href="#get-involved">Apply</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-  </div>
-
-  <header id="top">
-    <div class="container">
-      <h1>FUTURE CIVILIZATIONS</h1>
-      
-      <p class="hero-sub">
-        An Inter-Ivy initiative led by Cornell University exploring how artificial intelligence and autonomous systems will 
-        redefine the structures that sustain human life—through the lens of the “Next Human City".
-      </p>
-      <p class="muted" style="margin-top: 10px;">April 2026 . Cornell University</p>
-    </div>
+  <header class="topbar">
+    <nav class="nav">
+      <a class="btn btn-apply" target="_blank" rel="noopener"
+         href="https://docs.google.com/forms/d/e/1FAIpQLSegwdnDPEMERKbQ5JsKC689qtoRi2FRqxj8H-4CxDi6CY5tmg/viewform">
+        Apply
+      </a>
+      <a href="conference.html" class="nav-link">Conference</a>
+      <a href="#team" class="nav-link">Team</a>
+      <a href="#join" class="nav-link">Join</a>
+    </nav>
   </header>
 
-  <div class="container">
-
-    <section id="panels">
-      <h2>Four Thematic Pillars</h2>
-      <p class="muted" style="text-align: center; max-width: 70ch; margin: 0 auto;">  The program is organized around four pillars 
-      exploring how emerging technologies will reshape cities, society, food systems, and even civilization beyond Earth.</p>
-
-      <div class="grid">
-        <div class="card">
-          <h3>Designing the Autonomous City</h3>
-          <p class="muted">
-            How AI, robotics, and autonomous systems will transform architecture, mobility,
-            infrastructure, and the experience of public space.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Human Psychology, Purpose & Social Life</h3>
-          <p class="muted">
-            Identity, belonging, creativity, and emotional life in an AI-shaped world—
-            from autonomous agents to automated social systems.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Sustainability & Agriculture</h3>
-          <p class="muted">
-            AI-driven agriculture, resource distribution, food systems, and environmental technologies
-            that sustain future civilizations.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Frontier Cities</h3>
-          <p class="muted">
-            A serious exploration of off-world settlements—how civilization could extend to Mars
-            and how AI may be essential to building new forms of cities.
-          </p>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="demos">
-      <h2>Live Demonstrations</h2>
-      <p class="muted" style="text-align:center; max-width: 75ch; margin: 0 auto;">
-        Interactive exhibitions highlighting research and creative work at the boundary of AI, robotics, design, and society.
-        Each demonstration links to the lab or group behind it.
+  <!-- HERO: word art lives here as a subtle layer -->
+  <section class="hero hero-wordart">
+    <div class="hero-inner">
+      <p class="eyebrow">Cornell University</p>
+      <h1>Future Civilizations Society</h1>
+      <p class="subhead">
+        A student-led space exploring how emerging technologies reshape the structures,
+        relationships, and purposes that define civilization.
       </p>
 
-      <div class="grid" style="margin-top:18px;">
-        <div class="card">
-          <h3>Fashion Robotics — Maia Hirsch</h3>
-          <p class="muted">
-            Wearable technology, soft robotics, and fashion—garments that respond to the body, environment, and social interaction,
-            presented as interactive robotic dresses and “living systems.”
-          </p>
-          <a class="btn btn-secondary btn-small" href="#" target="_blank" rel="noopener">Visit Lab</a>
-        </div>
-
-        <div class="card">
-          <h3>Automation & Robotics Laboratory (AR Lab) — Lirong Xiang</h3>
-          <p class="muted">
-            AI-driven robotics for sustainable agriculture, integrating computer vision and machine learning.
-            Featuring Spyder Bot, a legged agricultural robot for autonomous sensing and monitoring.
-          </p>
-          <a class="btn btn-secondary btn-small" href="#" target="_blank" rel="noopener">Visit Lab</a>
-        </div>
-
-        <div class="card">
-          <h3>Machine Poetics — Sangh Leigh</h3>
-          <p class="muted">
-            Art, design, and robotics exploring embodied human–machine relationships.
-            Featuring <em>A Bit of the Stranger</em>, an experience reflecting on intimacy and coexistence with AI.
-          </p>
-          <a class="btn btn-secondary btn-small" href="#" target="_blank" rel="noopener">Visit Lab</a>
-        </div>
+      <div class="hero-ctas">
+        <a class="btn" href="conference.html">View Conference</a>
+        <a class="btn btn-ghost" href="#join">Connect</a>
       </div>
-    </section>
 
-    <!-- NEW: Conference section (date + countdown + buttons) -->
-    <section id="conference">
-      <h2>Conference</h2>
-
-      <div class="grid">
-        <div class="card">
-          <h3>Date & Location</h3>
-          <p class="muted">
-            <strong>April 18, 2026</strong><br>
-            Cornell University
-          </p>
-
-          <div class="btn-row">
-            <a class="btn btn-secondary" href="conference.html#demos">Demos</a>
-            <a class="btn btn-secondary" href="speakers.html">Speakers</a>
-            <a class="btn btn-secondary" href="conference.html">More...</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Countdown</h3>
-          <p class="muted">Time remaining until the conference:</p>
-
-          <div class="countdown">
-            <div class="timebox">
-              <div class="time" id="cdDays">--</div>
-              <div class="label">Days</div>
-            </div>
-            <div class="timebox">
-              <div class="time" id="cdHours">--</div>
-              <div class="label">Hours</div>
-            </div>
-            <div class="timebox">
-              <div class="time" id="cdMinutes">--</div>
-              <div class="label">Minutes</div>
-            </div>
-            <div class="timebox">
-              <div class="time" id="cdSeconds">--</div>
-              <div class="label">Seconds</div>
-            </div>
-          </div>
-
-          <p class="muted small" id="cdStatus"></p>
-        </div>
+      <div class="hero-meta">
+        <span class="meta-chip">Interdisciplinary</span>
+        <span class="meta-chip">Panels + Demos</span>
+        <span class="meta-chip">Built at Cornell</span>
       </div>
-    </section>
-
-    <section id="execs">
-      <h2>Leadership & Team</h2>
-        <p class="muted" style="text-align:center; max-width: 70ch; margin: 0 auto;">
-          The Future Civilizations Conference is led by a student team and supported by faculty mentorship.
-        </p>
-
-      <div class="exec-grid">
-        <div class="card exec">
-          <div class="avatar-img">
-            <img src="images/Daniyalfcs.jpg" alt="Daniyal Virk">
-          </div>
-          <div>
-            <h3 class="exec-name">Daniyal Virk</h3>
-            <div class="muted">Founder & Director</div>
-            <a class="email" href="mailto:div6@cornell.edu">div6@cornell.edu</a>
-          </div>
-        </div>
-
-        <div class="card exec">
-          <div class="avatar-img">
-            <img src="images/wasifFCS.jpg" alt="Wasif Atcha">
-          </div>
-          <div>
-            <h3 class="exec-name">Wasif Atcha</h3>
-            <div class="muted">Organiser of Outreach</div>
-            <a class="email" href="mailto:wa79@cornell.edu">wa79@cornell.edu</a>
-          </div>
-        </div>
-
-        <div class="card exec">
-          <div class="avatar-img">
-            <img src="images/Gazalfcs.jpg" alt="Gazal Abdallah">
-          </div>
-          <div>
-            <h3 class="exec-name">Gazal Abdallah</h3>
-            <div class="muted">Treasurer</div>
-            <a class="email" href="mailto:amg526@cornell.edu">amg526@cornell.edu</a>
-          </div>
-        </div>
-
-        <div class="card exec">
-          <div class="avatar-img">
-            <img src="images/AhmedFCS.jpg" alt="Ahmed Arif">
-          </div>
-          <div>
-            <h3 class="exec-name">Ahmed Arif</h3>
-            <div class="muted">Vice President</div>
-            <a class="email" href="mailto:amg526@cornell.edu">asa263@cornell.ed</a>
-          </div>
-        </div>
-
-        <div class="card exec">
-          <div class="avatar-img">
-            <img src="images/angelaFCS.png" alt="Angela">
-          </div>
-          <div>
-            <h3 class="exec-name">Angela</h3>
-            <div class="muted">Secretary</div>
-            <a class="email" href="mailto:amg526@cornell.edu">asa263@cornell.ed</a>
-          </div>
-        </div>
-
-        <div class="card exec">
-          <div class="avatar-img placeholder">SL</div>
-          <div>
-            <h3 class="exec-name">Sangh Leigh</h3>
-            <div class="muted">Faculty Advisor</div>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Team Members</h3>
-          <p class="muted" style="margin:0;">
-            Jonathan Segal • Angela Xu • Ahmed Arif • Abdallah Gazal • Wasif Atcha • Tanay Naik
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta-section" id="get-involved">
-      <h2>Get Involved</h2>
-      <p class="muted">Apply to join the team or schedule a 1-on-1 coffee chat.</p>
-
-      <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSegwdnDPEMERKbQ5JsKC689qtoRi2FRqxj8H-4CxDi6CY5tmg/viewform"
-        class="btn btn-primary"
-        target="_blank"
-        rel="noopener"
-      >
-        Submit Application
-      </a>
-
-      <!-- No calendly link yet -->
-      <span class="btn btn-secondary btn-disabled">Schedule Coffee Chat (Coming soon)</span>
-    </section>
-
-  </div>
-
-  <section id="contact" style="text-align:center; margin-top:60px;">
-    <h2>Contact</h2>
-    <p class="muted" style="max-width: 75ch; margin: 0 auto;">
-      For partnerships, press inquiries, academic collaboration, or participation opportunities:
-    </p>
-    <p style="margin-top:14px;">
-      <a class="btn btn-secondary" href="mailto:cornellfcs@gmail.com">cornellfcs@gmail.com</a>
-    </p>
-  </section>
-
-  <section style="text-align:center; margin-top:60px;">
-    <h2>Stay Connected</h2>
-    <p class="muted">Follow us for announcements, speaker reveals, and event updates.</p>
-
-    <div style="margin-top:15px;">
-      <span class="btn btn-secondary btn-disabled">Instagram (Launching Soon)</span>
-      <span class="btn btn-secondary btn-disabled">Discord (Launching Soon)</span>
-      <span class="btn btn-secondary btn-disabled">Groupme (Launching Soon)</span>
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2026 Future Civilizations Conference.</p>
+  <!-- QUICK CONFERENCE TEASER -->
+  <section class="section" aria-labelledby="conf-teaser">
+    <h2 id="conf-teaser">Upcoming: Future Civilizations Conference</h2>
+    <div class="grid-info">
+      <div class="card">
+        <h3>April 18, 2026</h3>
+        <p>
+          A one-day conference built around the “next human city” — exploring autonomy,
+          identity, sustainability, and frontier futures.
+        </p>
+        <a class="link" href="conference.html">Go to conference page →</a>
+      </div>
+
+      <div class="card">
+        <h3>What to expect</h3>
+        <p>
+          Panel conversations + demonstrations that make future systems feel tangible.
+          A space for ideas that are serious, speculative, and grounded.
+        </p>
+        <a class="link" href="conference.html#program">View pillars & demos →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team" class="section" aria-labelledby="team-title">
+    <h2 id="team-title">The Team</h2>
+    <p class="section-lead">
+      Faculty guidance + a student team building the conference and the society’s year-round work.
+    </p>
+
+    <div class="team-grid">
+      <div class="member-slot">
+        <img src="images/angelaFCS.png" alt="Faculty Advisor placeholder photo">
+        <p><strong>Faculty Advisor</strong></p>
+      </div>
+
+      <div class="member-slot">
+        <img src="images/Daniyalfcs.jpg" alt="President placeholder photo">
+        <p><strong>President</strong></p>
+      </div>
+
+      <div class="member-slot">
+        <img src="images/AhmedFCS.jpg" alt="Organizers placeholder photo">
+        <p><strong>Organizers</strong></p>
+      </div>
+
+      <div class="member-slot">
+        <img src="images/wasifFCS.jpg" alt="Team Members placeholder photo">
+        <p><strong>Team Members</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOIN (socials only, as you described) -->
+  <section id="join" class="section" aria-labelledby="join-title">
+    <h2 id="join-title">Join & Connect</h2>
+    <p class="section-lead">
+      Follow our updates and reach out — we’ll share meeting info, conference announcements, and openings.
+    </p>
+
+    <div class="card wide">
+      <div class="socials">
+        <a class="social" href="#" aria-label="Instagram link">Instagram</a>
+        <a class="social" href="#" aria-label="Discord link">Discord</a>
+        <a class="social" href="#" aria-label="GroupMe link">GroupMe</a>
+        <a class="social" href="mailto:futurecivilizations@cornell.edu" aria-label="Email link">Email</a>
+      </div>
+      <p class="micro">
+        
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Future Civilizations Society — Cornell</p>
   </footer>
 
   <script src="script.js"></script>
