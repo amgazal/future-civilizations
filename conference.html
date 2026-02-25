@@ -9,166 +9,215 @@
 
 <body>
 
-<div class="topnav">
-  <div class="nav-inner">
-    <a class="brand" href="index.html">Future Civilisations</a>
-    <div class="navlinks">
-      <a href="index.html#conference">Back</a>
-      <a href="speakers.html">Speakers</a>
+  <div class="topnav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">Future Civilisations</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="navlinks" id="navlinks">
+        <a href="index.html#conference">Back</a>
+        <a href="#pillars">Pillars</a>
+        <a href="#demos">Demos</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
   </div>
-</div>
 
-<main class="container">
+  <main class="container">
 
-  <h2>Future Civilizations Conference</h2>
-  <p class="date" style="text-align:center;">April 18, 2026 • Cornell University</p>
+    <h2>Future Civilizations Conference</h2>
+    <p class="date" style="text-align:center;">April 18, 2026 • Cornell University</p>
 
-  <!-- Vision -->
-  <section>
-    <h3>Conference Vision</h3>
-    <div class="card">
-      <p class="muted">
-        The Future Civilizations Conference brings together faculty, students, and external speakers to
-        explore how artificial intelligence, robotics, and autonomous systems are reshaping the foundations
-        of human life. Using the idea of the “next human city” as a central lens, the conference examines
-        how emerging technologies will transform social structures, economic systems, environmental sustainability,
-        and even the possibility of off-world settlements.
-      </p>
-
-      <p class="muted">
-        Rather than treating the future as abstract speculation, this conference creates space for
-        interdisciplinary dialogue that connects technical innovation with human values, ethical responsibility,
-        and long-term societal planning.
-      </p>
-    </div>
-  </section>
-
-  <!-- What Will Happen -->
-  <section>
-    <h3>What Will Happen at the Conference</h3>
-
-    <div class="grid">
-
-      <div class="card">
-        <h3>Keynote & Speaker Addresses</h3>
-        <p class="muted">
-          Expert speakers from academia, research institutions, and industry will deliver talks addressing
-          the technological, social, and ethical dimensions of AI-driven futures. These talks will provide
-          both high-level vision and concrete examples of current research shaping tomorrow’s cities.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Panel Discussions</h3>
-        <p class="muted">
-          Moderated panel sessions will bring together speakers from different disciplines to debate
-          real-world challenges, conflicting perspectives, and future policy questions. These discussions
-          are designed to encourage critical thinking and cross-field collaboration.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Audience Q&A Sessions</h3>
-        <p class="muted">
-          Attendees will have opportunities to ask direct questions to speakers and panelists.
-          These interactive sessions allow students and participants to engage deeply with ideas,
-          challenge assumptions, and explore unanswered questions about AI, society, and civilization.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Live Demonstrations & Exhibitions</h3>
-        <p class="muted">
-          Research labs and creative teams will showcase hands-on demonstrations that highlight
-          real applications of robotics, AI, and human–machine interaction. These exhibitions transform
-          abstract concepts into tangible experiences.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Panels -->
-  <section>
-    <h3>Conference Panels</h3>
-
-    <div class="grid">
-
-      <div class="card">
-        <h3>Designing the Autonomous City</h3>
-        <p class="muted">
-          This panel explores how AI and robotics will reshape architecture, transportation systems,
-          urban infrastructure, and public spaces. Topics include smart mobility, automated logistics,
-          and city-wide autonomous coordination.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Human Psychology, Purpose, and Social Life</h3>
-        <p class="muted">
-          This discussion examines how identity, creativity, emotional health, and social relationships
-          evolve in environments deeply integrated with autonomous systems, from AI companions to
-          algorithmic social platforms.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Sustainability & Agriculture</h3>
-        <p class="muted">
-          Panelists will explore AI-driven agriculture, resource management, food production systems,
-          and environmental technologies that will be essential to sustaining growing urban populations.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Frontier Cities: Beyond Earth</h3>
-        <p class="muted">
-          This session investigates off-world settlements such as Mars, focusing on the technological,
-          social, and governance challenges of building entirely new civilizations beyond Earth.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Demonstrations -->
+    <!-- Vision -->
     <section>
-        <h3>Speakers & Special Guests</h3>
+      <h3>Conference Vision</h3>
+      <div class="card">
+        <p class="muted">
+          The Future Civilizations Conference is an Inter-Ivy initiative led by Cornell University,
+          convening scholars, engineers, architects, artists, designers, and builders to explore how
+          artificial intelligence and autonomous systems will redefine the structures that sustain human life.
+          The conference is framed around a core theme: the “Next Human City.”
+        </p>
 
-        <div class="card">
-            <p class="muted">
-            The speaker lineup will feature a diverse group of professors, researchers, technologists,
-            and industry leaders working at the intersection of artificial intelligence, robotics,
-            urban systems, and sustainability.
-            </p>
-
-            <p class="muted">
-            Full speaker profiles and presentation topics will be announced closer to the conference date.
-            </p>
-
-            <a class="btn btn-secondary" href="speakers.html">View Speakers (Coming Soon)</a>
-        </div>
+        <p class="muted">
+          Rather than treating the future as speculation, the conference creates space for interdisciplinary
+          dialogue that connects technical innovation with human values, ethical responsibility, and long-term
+          societal planning.
+        </p>
+      </div>
     </section>
 
-  <!-- Call to Action -->
-  <section class="cta-section">
-    <h2>Join the Conversation</h2>
-    <p class="muted">
-      Whether you are interested in technology, policy, design, sustainability, or social impact,
-      the Future Civilizations Conference offers a space to engage with the most important questions
-      shaping humanity’s future.
-    </p>
+    <!-- What Will Happen -->
+    <section>
+      <h3>What Will Happen at the Conference</h3>
 
-    <a class="btn btn-primary" href="index.html#get-involved">Register through Campus Groups</a>
-    <a class="btn btn-secondary" href="speakers.html">View Speakers</a>
-  </section>
+      <div class="grid">
+        <div class="card">
+          <h3>Speaker Addresses</h3>
+          <p class="muted">
+            Speakers from academia and industry will deliver talks exploring the technological, social,
+            and ethical dimensions of AI-driven futures—offering both big-picture vision and current research.
+          </p>
+        </div>
 
-</main>
+        <div class="card">
+          <h3>Panel Conversations</h3>
+          <p class="muted">
+            Moderated panels bring together different disciplines to debate real-world challenges and future
+            questions—designed to surface tensions, tradeoffs, and new ideas across fields.
+          </p>
+        </div>
 
-<footer>
-  <p>&copy; 2026 Future Civilizations Conference • Cornell University</p>
-</footer>
+        <div class="card">
+          <h3>Audience Q&A</h3>
+          <p class="muted">
+            Attendees will have dedicated opportunities to ask questions and engage directly with speakers
+            and panelists—testing ideas, challenging assumptions, and exploring unanswered questions.
+          </p>
+        </div>
 
+        <div class="card">
+          <h3>Live Demonstrations</h3>
+          <p class="muted">
+            Interactive exhibitions will showcase real applications of robotics, AI, design, and human–machine
+            interaction—turning abstract concepts into tangible experiences.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pillars -->
+    <section id="pillars">
+      <h3>Four Thematic Pillars</h3>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Designing the Autonomous City</h3>
+          <p class="muted">
+            How AI, robotics, and autonomous systems will transform architecture, mobility,
+            infrastructure, and the experience of public space.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Human Psychology, Purpose, and Social Life</h3>
+          <p class="muted">
+            Identity, belonging, creativity, and emotional life in an AI-shaped world—ranging from
+            autonomous agents to automated social systems and new forms of community.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Sustainability & Agriculture</h3>
+          <p class="muted">
+            AI-driven agriculture, resource distribution, and environmental systems that sustain future
+            civilizations—especially under climate pressure and limited resources.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Frontier Cities</h3>
+          <p class="muted">
+            A serious exploration of off-world settlements—how civilization could extend to Mars and how AI
+            may be essential to building new forms of cities beyond Earth.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live Demonstrations -->
+    <section id="demos">
+      <h3>Live Demonstrations</h3>
+      <p class="muted" style="max-width: 80ch;">
+        These exhibitions highlight research and creative work at the boundary of AI, robotics, design,
+        and society. Each demonstration includes a link to the lab or group behind it.
+      </p>
+
+      <div class="grid" style="margin-top: 14px;">
+        <div class="card">
+          <h3>Fashion Robotics — Maia Hirsch</h3>
+          <p class="muted">
+            Wearable technology and soft robotics garments that respond to the body, environment, and social
+            interaction—presented as interactive robotic dresses and “living systems.”
+          </p>
+          <a class="btn btn-secondary btn-small" href="#" target="_blank" rel="noopener">Visit Lab</a>
+        </div>
+
+        <div class="card">
+          <h3>Automation & Robotics Laboratory (AR Lab) — Lirong Xiang</h3>
+          <p class="muted">
+            AI-driven robotics for sustainable agriculture, integrating computer vision and machine learning.
+            Featuring Spyder Bot, a legged agricultural robot for autonomous sensing and monitoring.
+          </p>
+          <a class="btn btn-secondary btn-small" href="#" target="_blank" rel="noopener">Visit Lab</a>
+        </div>
+
+        <div class="card">
+          <h3>Machine Poetics — Sangh Leigh</h3>
+          <p class="muted">
+            Art, design, and robotics exploring embodied human–machine relationships. Featuring
+            <em>A Bit of the Stranger</em>, an experience reflecting on intimacy, alienness, and coexistence with AI.
+          </p>
+          <a class="btn btn-secondary btn-small" href="#" target="_blank" rel="noopener">Visit Lab</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Speakers -->
+    <section>
+      <h3>Speakers</h3>
+      <div class="card">
+        <p class="muted" style="margin-top:0;">
+          Speaker profiles and talk titles will be announced as the schedule is finalized.
+        </p>
+
+        <ul class="muted" style="margin: 14px 0 0; padding-left: 18px; line-height: 1.8;">
+          <li>Manoj Karkee</li>
+          <li>Rosa Santomartino</li>
+          <li>JoAnn Difede</li>
+          <li>Shane Henderson</li>
+          <li>James Burk</li>
+        </ul>
+
+        <div style="margin-top: 12px;">
+          <a class="btn btn-secondary" href="speakers.html">View Speakers</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h3>Contact</h3>
+      <div class="card">
+        <p class="muted" style="margin-top:0;">
+          For partnerships, press inquiries, academic collaboration, or participation opportunities:
+        </p>
+        <a class="btn btn-secondary" href="mailto:cornellfcs@gmail.com">cornellfcs@gmail.com</a>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+      <h2>Join the Conversation</h2>
+      <p class="muted">
+        Whether you are interested in technology, policy, design, sustainability, or social impact,
+        the Future Civilizations Conference offers a space to engage with the most important questions
+        shaping humanity’s future.
+      </p>
+
+      <a class="btn btn-primary" href="index.html#get-involved">Register through Campus Groups</a>
+      <a class="btn btn-secondary" href="speakers.html">View Speakers</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Future Civilizations Conference • Cornell University</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
