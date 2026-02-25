@@ -1,62 +1,35 @@
-// Countdown to April 18, 2026 (local time)
-const target = new Date(2026, 3, 18, 0, 0, 0); // 3 = April
+// Shared utilities
+(() => {
+  const yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+})();
 
-const elDays = document.getElementById("cdDays");
-const elHours = document.getElementById("cdHours");
-const elMinutes = document.getElementById("cdMinutes");
-const elSeconds = document.getElementById("cdSeconds");
-const elStatus = document.getElementById("cdStatus");
 
-function pad(n){ return String(n).padStart(2, "0"); }
+(() => {
+  const timerEl = document.getElementById("timer");
+  if (!timerEl) return;
 
-function tick(){
-  if (!elDays) return; // safe if section removed later
+  // Countdown to April 18, 2026 09:00:00 local time
+  const targetDate = new Date("April 18, 2026 09:00:00").getTime();
 
-  const now = new Date();
-  let diff = target - now;
+  const tick = () => {
+    const now = Date.now();
+    const distance = targetDate - now;
 
-  if (diff <= 0){
-    elDays.textContent = "00";
-    elHours.textContent = "00";
-    elMinutes.textContent = "00";
-    elSeconds.textContent = "00";
-    if (elStatus) elStatus.textContent = "The conference day is here!";
-    return;
-  }
+    if (distance <= 0) {
+      timerEl.textContent = "CONFERENCE IN SESSION";
+      return;
+    }
 
-  const sec = Math.floor(diff / 1000);
-  const days = Math.floor(sec / (3600 * 24));
-  const hours = Math.floor((sec % (3600 * 24)) / 3600);
-  const minutes = Math.floor((sec % 3600) / 60);
-  const seconds = sec % 60;
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  elDays.textContent = String(days);
-  elHours.textContent = pad(hours);
-  elMinutes.textContent = pad(minutes);
-  elSeconds.textContent = pad(seconds);
-  if (elStatus) elStatus.textContent = "";
-}
+    const pad = (n) => String(n).padStart(2, "0");
+    timerEl.textContent = `${days}d ${pad(hours)}h ${pad(minutes)}m ${pad(seconds)}s`;
+  };
 
-tick();
-setInterval(tick, 1000);
-
-// Mobile hamburger toggle
-const hamburger = document.getElementById("hamburger");
-const navlinks = document.getElementById("navlinks");
-
-if (hamburger && navlinks) {
-  hamburger.addEventListener("click", () => {
-    const isOpen = navlinks.classList.toggle("open");
-    hamburger.classList.toggle("open", isOpen);
-    hamburger.setAttribute("aria-expanded", String(isOpen));
-  });
-
-  // Close menu after clicking a link (nice on mobile)
-  navlinks.querySelectorAll("a").forEach(a => {
-    a.addEventListener("click", () => {
-      navlinks.classList.remove("open");
-      hamburger.classList.remove("open");
-      hamburger.setAttribute("aria-expanded", "false");
-    });
-  });
-}
+  tick();
+  setInterval(tick, 1000);
+})();
