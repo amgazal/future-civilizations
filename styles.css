@@ -83,7 +83,7 @@ html, body {
 }
 
 .section {
-  padding: 96px 10%;
+  padding: 46px 10%;
   min-height: auto;
 }
 
@@ -433,4 +433,5 @@ h3 {
     padding: 14px 6%;
   }
 }
+
 
