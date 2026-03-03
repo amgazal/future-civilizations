@@ -258,6 +258,32 @@ h2 {
   font-size: 2rem;
 }
 
+h2 {
+  margin: 0 0 10px;
+  font-size: 2rem;
+}
+
+/* Add this */
+h3 {
+  margin: 0 0 10px;
+  font-size: 1.25rem;      /* synced heading size */
+  line-height: 1.25;
+  letter-spacing: 0.1px;
+}
+
+/* If your speaker names are links inside an h3, ensure they don't shrink */
+h3 a {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+h3 a:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
 h3 {
   margin: 0 0 10px;
 }
@@ -355,6 +381,7 @@ h3 {
     padding: 14px 6%;
   }
 }
+
 
 
 
