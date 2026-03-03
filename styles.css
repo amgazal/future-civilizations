@@ -91,6 +91,8 @@ html, body {
   padding-top: 120px; /* for fixed nav */
 }
 
+a { color: inherit; }
+
 .speaker-list {
   margin-top: 22px;
   max-width: 980px;
@@ -437,6 +439,7 @@ h3 {
     padding: 14px 6%;
   }
 }
+
 
 
 
