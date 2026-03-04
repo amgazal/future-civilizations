@@ -181,6 +181,12 @@ a { color: inherit; }
   pointer-events: none;
 }
 
+.card-wide {
+  grid-column: 1 / -1;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
 .card-link {
   text-decoration: none;
   color: inherit;
@@ -439,6 +445,7 @@ h3 {
     padding: 14px 6%;
   }
 }
+
 
 
 
