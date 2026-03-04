@@ -185,6 +185,7 @@ a { color: inherit; }
   grid-column: 1 / -1;
   max-width: 980px;
   margin: 0 auto;
+  border-left: 3px solid rgba(179, 27, 27, 0.65);
 }
 
 .card-link {
@@ -445,6 +446,7 @@ h3 {
     padding: 14px 6%;
   }
 }
+
 
 
 
