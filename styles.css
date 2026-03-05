@@ -377,6 +377,98 @@ h3 {
   line-height: 1.6;
 }
 
+/* ========= Announcement ticker (with separators + pro polish) ========= */
+
+.announcement-bar {
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+  border: 1px solid var(--blueprint-line);
+  border-radius: 10px;
+  background: var(--panel);
+}
+
+/* Fade edges (cinematic) */
+.announcement-bar::before,
+.announcement-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 70px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.announcement-bar::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(0, 18, 32, 0.95), rgba(0, 18, 32, 0));
+}
+
+.announcement-bar::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(0, 18, 32, 0.95), rgba(0, 18, 32, 0));
+}
+
+/* Moving line of text */
+.announcement-track {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 18px 0;
+
+  width: max-content;
+  animation: scrollTicker 26s linear infinite;
+  will-change: transform;
+}
+
+/* Pause on hover (desktop) */
+.announcement-bar:hover .announcement-track {
+  animation-play-state: paused;
+}
+
+.announcement-track span {
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--text-main);
+  opacity: 0.92;
+}
+
+/* Option 4: Cornell red separators */
+.announcement-track span::after {
+  content: "•";
+  margin: 0 28px;
+  color: var(--accent-red);
+  opacity: 0.95;
+  font-weight: 900;
+}
+
+/* Smooth loop: move half the track (since you duplicated items in HTML) */
+@keyframes scrollTicker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* Option 5: Mobile tuning (slower + no hover dependency) */
+@media (max-width: 860px) {
+  .announcement-track {
+    animation-duration: 34s;
+  }
+
+  .announcement-bar::before,
+  .announcement-bar::after {
+    width: 45px; /* less fade on small screens */
+  }
+}
+
+/* Optional accessibility: respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .announcement-track {
+    animation: none;
+    transform: none;
+  }
+}
+
 /* Team */
 .team-grid {
   display: grid;
@@ -464,6 +556,7 @@ h3 {
     padding: 14px 6%;
   }
 }
+
 
 
 
