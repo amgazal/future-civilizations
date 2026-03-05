@@ -534,7 +534,45 @@ h3 {
   margin: 20px 0 0;
 }
 
+.light-theme {
+  background: #ffffff;
+  color: #0f172a;
+}
 
+/* headings */
+.light-theme h1,
+.light-theme h2,
+.light-theme h3 {
+  color: #0f172a;
+}
+
+/* paragraph text */
+.light-theme .section-lead,
+.light-theme p {
+  color: #475569;
+}
+
+/* cards */
+.light-theme .card {
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+/* links */
+.light-theme .link {
+  color: #B31B1B;
+  border-bottom: 1px solid rgba(179,27,27,0.4);
+}
+
+/* nav bar */
+.light-theme .topbar {
+  background: rgba(255,255,255,0.85);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.light-theme .nav-link {
+  color: #0f172a;
+}
 
 /* Join socials */
 .socials {
@@ -589,6 +627,7 @@ h3 {
     padding: 14px 6%;
   }
 }
+
 
 
 
