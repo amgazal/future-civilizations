@@ -202,6 +202,13 @@ a { color: inherit; }
   mask-position: center;
 }
 
+.hero-wordart::after {
+  background: radial-gradient(circle at center,
+    rgba(0, 18, 32, 0.55) 0%,
+    rgba(0, 18, 32, 0.86) 60%,
+    rgba(0, 18, 32, 0.94) 100%);
+}
+
 /* Mobile tuning */
 @media (max-width: 860px) {
   .hero-wordart::before {
@@ -680,6 +687,7 @@ body.light-theme .footer {
     padding: 14px 6%;
   }
 }
+
 
 
 
