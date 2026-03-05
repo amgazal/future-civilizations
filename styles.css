@@ -175,13 +175,25 @@ a { color: inherit; }
   content: "";
   position: absolute;
   inset: 0;
+
   background-image: url("images/FCS_wordart.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: min(900px, 70vw);
-  opacity: 0.16;              /* key: subtle */
-  filter: contrast(1.05);
+
+  opacity: 0.14;
+  filter: blur(0.4px) contrast(1.05);
   pointer-events: none;
+
+  /* This is the key: fades edges so it blends, not boxy */
+  -webkit-mask-image: radial-gradient(circle at center,
+    rgba(0,0,0,0.95) 0%,
+    rgba(0,0,0,0.55) 45%,
+    rgba(0,0,0,0.0) 72%);
+  mask-image: radial-gradient(circle at center,
+    rgba(0,0,0,0.95) 0%,
+    rgba(0,0,0,0.55) 45%,
+    rgba(0,0,0,0.0) 72%);
 }
 
 @media (max-width: 860px) {
@@ -194,7 +206,18 @@ a { color: inherit; }
 
 @media (max-width: 860px) {
   .hero-wordart::before {
-    background-position: center 140px; /* anchor by pixels */
+    background-position: 50% 34%;      /* behind heading block */
+    background-size: min(520px, 92vw);
+    opacity: 0.12;
+  }
+}
+
+@media (max-width: 860px) {
+  .hero-wordart::after {
+    background: radial-gradient(circle at 50% 35%,
+      rgba(0, 18, 32, 0.30) 0%,
+      rgba(0, 18, 32, 0.78) 55%,
+      rgba(0, 18, 32, 0.94) 100%);
   }
 }
 
@@ -570,6 +593,7 @@ h3 {
     padding: 14px 6%;
   }
 }
+
 
 
 
