@@ -170,11 +170,11 @@ a { color: inherit; }
   overflow: hidden;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
-
 .hero-wordart::before {
   content: "";
   position: absolute;
   inset: 0;
+  pointer-events: none;
 
   background-image: url("images/FCS_wordart.png");
   background-repeat: no-repeat;
@@ -183,36 +183,33 @@ a { color: inherit; }
 
   opacity: 0.14;
   filter: blur(0.4px) contrast(1.05);
-  pointer-events: none;
 
-  /* This is the key: fades edges so it blends, not boxy */
+  /* iOS/Safari-friendly mask */
   -webkit-mask-image: radial-gradient(circle at center,
-    rgba(0,0,0,0.95) 0%,
-    rgba(0,0,0,0.55) 45%,
-    rgba(0,0,0,0.0) 72%);
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,0.55) 48%,
+    rgba(0,0,0,0) 74%);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  -webkit-mask-position: center;
+
   mask-image: radial-gradient(circle at center,
-    rgba(0,0,0,0.95) 0%,
-    rgba(0,0,0,0.55) 45%,
-    rgba(0,0,0,0.0) 72%);
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,0.55) 48%,
+    rgba(0,0,0,0) 74%);
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: center;
 }
 
+/* Mobile tuning */
 @media (max-width: 860px) {
   .hero-wordart::before {
-    background-position: 50% 22%;          /* move it up */
-    background-size: min(520px, 92vw);     /* fit mobile width */
-    opacity: 0.12;                         /* slightly lighter */
-  }
-}
-
-@media (max-width: 860px) {
-  .hero-wordart::before {
-    background-position: 50% 34%;      /* behind heading block */
+    background-position: 50% 34%;
     background-size: min(520px, 92vw);
     opacity: 0.12;
   }
-}
 
-@media (max-width: 860px) {
   .hero-wordart::after {
     background: radial-gradient(circle at 50% 35%,
       rgba(0, 18, 32, 0.30) 0%,
@@ -220,7 +217,6 @@ a { color: inherit; }
       rgba(0, 18, 32, 0.94) 100%);
   }
 }
-
 .card-wide {
   grid-column: 1 / -1;
   width: 100%;                
@@ -593,6 +589,7 @@ h3 {
     padding: 14px 6%;
   }
 }
+
 
 
 
