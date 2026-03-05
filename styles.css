@@ -184,6 +184,20 @@ a { color: inherit; }
   pointer-events: none;
 }
 
+@media (max-width: 860px) {
+  .hero-wordart::before {
+    background-position: 50% 22%;          /* move it up */
+    background-size: min(520px, 92vw);     /* fit mobile width */
+    opacity: 0.12;                         /* slightly lighter */
+  }
+}
+
+@media (max-width: 860px) {
+  .hero-wordart::before {
+    background-position: center 140px; /* anchor by pixels */
+  }
+}
+
 .card-wide {
   grid-column: 1 / -1;
   width: 100%;                
@@ -556,6 +570,7 @@ h3 {
     padding: 14px 6%;
   }
 }
+
 
 
 
