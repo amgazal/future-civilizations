@@ -534,7 +534,7 @@ h3 {
   margin: 20px 0 0;
 }
 
-.light-theme {
+body.light-theme {
   background: #ffffff;
   color: #0f172a;
 }
@@ -572,6 +572,59 @@ h3 {
 
 .light-theme .nav-link {
   color: #0f172a;
+}
+
+/* ===== Light Theme (strong overrides) ===== */
+body.light-theme {
+  background: #ffffff !important;
+  color: #0f172a !important;
+}
+
+body.light-theme .topbar {
+  background: rgba(255,255,255,0.92) !important;
+  border-bottom: 1px solid rgba(0,0,0,0.08) !important;
+}
+
+body.light-theme .nav-link {
+  color: #0f172a !important;
+}
+
+body.light-theme .btn {
+  background: rgba(0,0,0,0.04) !important;
+  border-color: rgba(0,0,0,0.12) !important;
+  color: #0f172a !important;
+}
+
+body.light-theme .btn-apply {
+  background: var(--accent-red) !important;
+  color: #ffffff !important;
+}
+
+body.light-theme .section-lead,
+body.light-theme p,
+body.light-theme .micro {
+  color: rgba(15, 23, 42, 0.74) !important;
+}
+
+body.light-theme h1,
+body.light-theme h2,
+body.light-theme h3 {
+  color: #0f172a !important;
+}
+
+body.light-theme .card {
+  background: #ffffff !important;
+  border-color: rgba(0,0,0,0.10) !important;
+}
+
+body.light-theme .link {
+  color: var(--accent-red) !important;
+  border-bottom-color: rgba(179,27,27,0.45) !important;
+}
+
+body.light-theme .footer {
+  border-top: 1px solid rgba(0,0,0,0.10) !important;
+  color: rgba(15, 23, 42, 0.65) !important;
 }
 
 /* Join socials */
@@ -627,6 +680,7 @@ h3 {
     padding: 14px 6%;
   }
 }
+
 
 
 
