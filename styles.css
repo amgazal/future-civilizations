@@ -215,6 +215,10 @@ a { color: inherit; }
   text-shadow: 0 2px 18px rgba(0, 0, 0, 0.45);
 }
 
+.hero-inner h1 {
+  text-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+
 /* Mobile tuning */
 @media (max-width: 860px) {
   .hero-wordart::before {
@@ -699,6 +703,7 @@ body.light-theme .footer {
     padding: 14px 6%;
   }
 }
+
 
 
 
